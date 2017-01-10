@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Just Do 8</title>
+    <!--禁止浏览器缓存-->
+    <meta http-equiv="pragma" content="no-cach" /> 
+    <meta http-equiv="cache-control" content="no-cache" /> 
+    <meta http-equiv="expires" content="0" />
+    <!--宽度为设备的最大宽度，禁止用户放大和缩小-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--让网页内容以应用程序风格显示，并使状态栏透明-->
+    <!--删除默认的苹果工具栏和菜单栏-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--指定的iphone中浏览器顶端的状态条的样式为：黑色透明-->
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
+    <!--告诉设备忽略将页面中的数字识别为电话号码-->
+    <meta content="telephone=no" name="format-detection" />
+    <!--CSS文件-->
+    <link rel="stylesheet" type="text/css" id="index_css" href="css/index.css">
+    <!--JS文件-->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+	<div id="container">
+    <div id="tlt">Just Do 8</div>
+    <div id="score">0</div>
+    <div id="lose_block">
+    	<p class="tlt">YOUR SCORE:</p>
+        <p class="score">0</p>
+        <p class="h_score">HIGH SCORE : <span>0</span></p>
+        <span class="restart">RESTART</span>
+    </div>
+    <div id="win_block">
+    	<p class="tlt">YOUR WIN !!</p>
+        <p class="score">0</p>
+        <p class="h_score">HIGH SCORE : <span>0</span></p>
+        <span class="restart">RESTART</span>
+    </div>
+      <div id="box">
+      <!--
+    	<div class="item item1">1</div>
+    	<div class="item item2">2</div>
+    	<div class="item item3">3</div>
+    	<div class="item item4">4</div>
+    	<div class="item item5">5</div>
+    	<div class="item item6">6</div>
+    	<div class="item item7">7</div>
+    	<div class="item item8">8</div>
+        
+    	<div class="item item2 item_p">2</div>
+        -->
+        
+      </div>
+    </div>
+</body>
+</html>
+<script>
+document.ontouchmove = function(e){ e.preventDefault(); }
+window.onselectstart=function()   {return   false;}       //禁用选择
+window.oncopy=function()   {return   false;}       //禁止复制
+//禁止查看源代码
+function stop(){
+return false;
+}
+document.oncontextmenu=stop;
+document.onkeydown=function(){ 
+if(window.event && window.event.keyCode >= 113&&window.event.keyCode<=123&&window.event.keyCode!=116) { 
+return false;
+};
+}
+
+</script>

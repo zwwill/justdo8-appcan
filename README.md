@@ -7,14 +7,6 @@
 ## 【界面效果图】
 ![](http://upload-images.jianshu.io/upload_images/1494908-ebd2bee4ced23ac8.png)
 
-## 【代码结构】
-![](http://upload-images.jianshu.io/upload_images/1494908-dd016b8c8a57b934)
-
-## 【代码结构解释】
-
-1、使用html语言实现数据
-2、使用css3语言实现样式
-3、使用js语言实现控制
 
 ## 【AppCan打包封装】
 
